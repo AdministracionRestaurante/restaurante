@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 95px;
+    position: relative;
+}
+
+.main-header {
+    background-color: #1a1a1a; 
+    border-bottom: 4px solid #d4af37;
+    padding: 15px;
+    width: 100%;
+    height:60px;
+}
+
+.logo-area {
+    float: left;
+}
+
+#logo-img {
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#restaurante-name {
+    font-size: 22px;
+    color: #d4af37;
+}
+
+.main-nav {
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+
+.hero-banner {
+    text-align: center;
+    color: #d4c111;
+    padding-top: 15%;
+}
+
+#frase {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#mensaje {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ebaf0b;
+}
+
+#btnReserva, #btnMenu {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+#btnReserva {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+#btnReserva:hover {
+    background-color: #bfa030;
+}
+
+#btnMenu {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+#btnMenu:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+
+.features-section {
+    background-color: #121212;
+    padding: 60px;
+    text-align: center;
+}
+
+#titulo {
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+}
+
+
+.feature-card {
+    width: 30%;
+    margin-right: 3.33%;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.feature-card h3 {
+    margin: 15px 10px ;
+    color: #f4f4f4;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #aaaaaa;
+    padding: 15px;
+}
+
+.main-footer {
+    background-color: #0d0d0d;
+    color: #f7f0f0;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #8f8c8c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#contacto {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #f3eeee;
+}
+
+/*Se utiliza en nosotros.html*/
+.page-main { 
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.glass-card {
+    width: 900px;
+    padding: 48px 40px;
+    border-radius: 18px;
+    background: rgba(17, 17, 17, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px);
+    margin: 0 auto;
+}
+
+#nosotros{
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#nosotros-text{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+/*Se usa en el menu.html*/
+.menu-container{
+    display: flex;
+    gap: 5%;
+
+}
+.menu-table{
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    width: 30%; 
+}
+
+/*Se usa para los formularios*/
+.form-content{
+    margin-top: 10%;
+    gap: 20px;
+}
+.glass-form{
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 10px 30px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    margin: auto;
+}
+
+fieldset{
+    text-align: center;
+    color: white;
+    width: 20%;
+}
+
+.form-group{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.input-group{
+    text-align: center;
+    width: 70%;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+}
+
+
+#btnReservar{
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
+#btnReservar:hover{
+    background-color: #bfa030;
+}
+
+
