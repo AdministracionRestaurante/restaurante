@@ -3,6 +3,15 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@keyframes revelar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 body{
     background-image: url("../img/fondo.png");
     background-size: cover;
@@ -34,6 +43,7 @@ body{
 #restaurante-name {
     font-size: 22px;
     color: #d4af37;
+    animation: revelar 2s ease-in-out forwards;;
 }
 
 .main-nav {
