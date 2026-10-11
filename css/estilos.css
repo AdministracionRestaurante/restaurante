@@ -22,7 +22,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 0;
 }
 
 .main-header {
@@ -91,7 +90,6 @@ body {
 #mensaje {
     font-size: clamp(16px, 2vw, 18px);
     margin-bottom: 30px;
-
     color: #ebaf0b;
 }
 
@@ -161,12 +159,13 @@ body {
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    
 }
-.card-img:hover{
+
+.card-img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
 .feature-card h3 {
     margin: 15px 10px;
     color: #f4f4f4;
@@ -239,7 +238,6 @@ body {
     flex: 1;
 }
 
-
 .menu-table {
     color: white;
     text-align: center;
@@ -281,7 +279,6 @@ fieldset {
     width: 70%;
     border: 5px solid #ffffff;
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
 #btnReservar {
@@ -311,7 +308,6 @@ fieldset {
 
     .main-nav {
         flex: 1 1 100%;
-
         justify-content: center;
     }
 }
@@ -366,7 +362,6 @@ fieldset {
     #btnReserva, #btnMenu {
         display: block;
         width: min(280px, 100%);
-        box-sizing: border-box;
         margin: 10px auto;
     }
 
