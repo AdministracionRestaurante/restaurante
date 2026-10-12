@@ -76,7 +76,7 @@ body {
     border-bottom-color: #d4af37;
 }
 
-.hero-banner {
+.main-banner {
     text-align: center;
     color: #d4c111;
     padding: 15% 20px 80px;
@@ -94,7 +94,7 @@ body {
 }
 
 #btnReserva, #btnMenu {
-    display: inline-block;
+    display: inline-flex;
     padding: 12px 30px;
     text-decoration: none;
     font-weight: bold;
@@ -133,7 +133,7 @@ body {
     margin-bottom: 40px;
 }
 
-.features-container {
+.features-cont {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
@@ -194,7 +194,7 @@ body {
     color: #f3eeee;
 }
 
-.page-main {
+.main-pg {
     width: 90%;
     max-width: 1100px;
     margin: 60px auto;
@@ -228,7 +228,7 @@ body {
     line-height: 1.6;
 }
 
-.menu-container {
+.menu-cont {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
@@ -238,14 +238,14 @@ body {
     flex: 1;
 }
 
-.menu-table {
+.menu-tbl {
     color: white;
     text-align: center;
     width: 100%;
     margin-top: 0;
 }
 
-.form-content {
+.frm-cont {
     margin-top: 10%;
     gap: 20px;
     flex: 1;
@@ -266,7 +266,7 @@ fieldset {
     width: 100%;
 }
 
-.form-group {
+.frm-group {
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@ fieldset {
 }
 
 @media (max-width: 900px) {
-    .features-container {
+    .features-cont {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -313,7 +313,7 @@ fieldset {
 }
 
 @media (max-width: 760px) {
-    .menu-container {
+    .menu-cont {
         grid-template-columns: 1fr;
     }
 }
@@ -351,7 +351,7 @@ fieldset {
         padding: 6px 8px;
     }
 
-    .hero-banner {
+    .main-banner {
         padding: 70px 16px 55px;
     }
 
@@ -374,7 +374,7 @@ fieldset {
         margin-bottom: 28px;
     }
 
-    .features-container {
+    .features-cont {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -383,7 +383,7 @@ fieldset {
         height: 190px;
     }
 
-    .page-main {
+    .main-pg {
         width: 100%;
         margin: 30px auto;
         padding: 0 16px;
@@ -406,20 +406,20 @@ fieldset {
         margin-bottom: 0;
     }
 
-    .menu-container {
+    .menu-cont {
         width: 100%;
         margin: 30px auto;
         padding: 0 12px;
         gap: 20px;
     }
 
-    .menu-table {
+    .menu-tbl {
         width: 100%;
         overflow-x: auto;
         font-size: 14px;
     }
 
-    .form-content {
+    .frm-cont {
         margin-top: 40px;
         padding: 0 12px 40px;
     }
