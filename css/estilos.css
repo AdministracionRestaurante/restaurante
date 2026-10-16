@@ -50,13 +50,12 @@ body {
 #restaurante-name {
     font-size: 22px;
     color: #d4af37;
-    animation: revelar 2s ease-in-out forwards;
+    animation: revelar 2s ease-in-out;
 }
 
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-wrap: wrap;
     gap: 5px 10px;
 }
