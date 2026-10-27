@@ -73,7 +73,7 @@ body {
     flex-shrink: 0;
 }
 
-#logo-img {
+.logo-img {
     height: 45px;
     margin-right: 10px;
 }
@@ -348,7 +348,7 @@ fieldset {
         width: 100%;
     }
 
-    #logo-img {
+    .logo-img {
         height: 40px;
         margin-right: 8px;
     }
