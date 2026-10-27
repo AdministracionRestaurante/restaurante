@@ -5,6 +5,37 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.feature-card2 {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.feature-card2 button {
+    width: 100%;             
+    padding: 15px 0;         
+    margin-top: auto;        
+    border: none;            
+    background-color: #8f3704; 
+    color: #f5f0f0;          /* Color del texto oscuro para contraste */
+    font-weight: bold;       /* Texto en negrita */
+    text-align: center;      /* Centra el texto "Agregar" automáticamente */
+    cursor: pointer;         /* Cambia el cursor al pasar el mouse */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-card2 button:hover {
+    background-color: #ce5109;
+}
+
 @keyframes revelar {
     0% {
         opacity: 0;
@@ -151,8 +182,16 @@ body {
     overflow: hidden;
 }
 
+.card-img2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .card-img {
-    display: block;
+    
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -166,15 +205,15 @@ body {
 }
 
 .feature-card h3 {
-    margin: 15px 10px;
+    text-align: center;
+    margin-top: 15px;
     color: #f4f4f4;
 }
 
 .feature-card p {
     font-size: 14px;
     color: #aaaaaa;
-    padding: 15px;
-    line-height: 1.5;
+    text-align: center;
 }
 
 .main-footer {
@@ -201,16 +240,7 @@ body {
     flex: 1;
 }
 
-.glass-card {
-    width: 100%;
-    max-width: 900px;
-    padding: 48px 40px;
-    border-radius: 18px;
-    background: rgba(17, 17, 17, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(12px);
-    margin: 0 auto;
-}
+
 
 #nosotros {
     color: #d4af37;
@@ -229,19 +259,11 @@ body {
 
 .menu-cont {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
-    flex: 1;
-}
-
-.menu-tbl {
-    color: white;
-    text-align: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
     width: 100%;
-    margin-top: 0;
+    max-width: 1200px;
+    margin: 15px auto; 
 }
 
 .frm-cont {
@@ -295,10 +317,6 @@ fieldset {
 @media (max-width: 900px) {
     .features-cont {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .glass-card {
-        width: 100%;
     }
 
     .main-header {
@@ -388,11 +406,6 @@ fieldset {
         padding: 0 16px;
     }
 
-    .glass-card {
-        width: 100%;
-        padding: 28px 20px;
-    }
-
     #nosotros {
         font-size: 27px;
         margin-bottom: 24px;
@@ -410,12 +423,6 @@ fieldset {
         margin: 30px auto;
         padding: 0 12px;
         gap: 20px;
-    }
-
-    .menu-tbl {
-        width: 100%;
-        overflow-x: auto;
-        font-size: 14px;
     }
 
     .frm-cont {
