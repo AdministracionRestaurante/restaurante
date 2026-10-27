@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="../css/DetallesMenu.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
             <a href="menu.html" class="nav-link">Menú</a>
             <a href="reservas.html" class="nav-link">Reservar</a>
             <a href="#contacto" class="nav-link">Contacto</a>
-            <a>
+            <a href="#" id="btn-carrito" class="nav-link">
                 <img src="../img/shopping-cart-svgrepo-com.svg" alt="Logo de Compra" class="logo-img">
             </a>
         </nav>
@@ -108,5 +109,34 @@
             Correo Electrónico: rincondelsabor@gmail.com
         </p>
 </footer>
+
+<dialog id="modal-carrito" class="modal-dialog">
+    <div class="modal-contenido">
+        
+        <button id="btn-cerrar-modal" class="btn-cerrar">❎</button>
+        
+        <h2>Confirma la dirección de entrega</h2>
+        
+        <div class="opciones-entrega">
+            <input type="radio" name="tipo_entrega">
+            <label>DELIVERY 🛻</label>
+            <input type="radio" name="tipo_entrega">
+            <label>RECOJO EN LOCAL 🏪</label>
+        </div>
+        
+        <p class="modal-subtexto">Ingresa tus datos para continuar</p>
+        
+        <form method="dialog" class="form-modal">
+            <div class="grupo-input">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Nombres y Apellidos" required>
+                <input type="tel" placeholder="Número de teléfono" required>
+            </div>
+            
+            <button type="submit" class="btn-continuar">Continuar</button>
+        </form>
+    </div>
+</dialog>
+<script src="../js/logica.js"></script>
 </body>
 </html>
