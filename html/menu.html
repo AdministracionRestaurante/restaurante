@@ -23,82 +23,80 @@
             <a href="menu.html" class="nav-link">Menú</a>
             <a href="reservas.html" class="nav-link">Reservar</a>
             <a href="#contacto" class="nav-link">Contacto</a>
-            <a href="#" id="btn-carrito" class="nav-link">
-                <img src="../img/shopping-cart-svgrepo-com.svg" alt="Logo de Compra" class="logo-img">
-            </a>
+            <button id="btn-carrito">🛒</button>
         </nav>
     </header>
     <main class="menu-cont">
             <article class="feature-card2">
                 <img src="../img/CocaColaF.jpg" alt="Fondos" class="card-img2">
                 <h3>4lt - S/10.00</h3>
-                <button>Agregar</button>
+                <button class="btn-agregar" data-name="Coca Cola 4lt" data-price="10.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/CocaColaI.png" alt="Fondos" class="card-img2">
                 <h3>600 ml - S/3.60</h3>
-                <button>Agregar</button>
+                <button class="btn-agregar" data-name="Coca Cola 600ml" data-price="3.60">Agregar</button>
             </article>
             
             <article class="feature-card2">
                 <img src="../img/Guarana.jpg" alt="Bebidas" class="card-img2">
                 <h3>3.5lt - S/8.00</h3>
-                <button>Agregar</button>
+                <button class="btn-agregar" data-name="Guarana 3.5lt" data-price="8.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/GuaranI.jpg" alt="Bebidas" class="card-img2">
                 <h3>500ml - S/3.00</h3>
-                <button>Agregar</button>
+                <button class="btn-agregar" data-name="Guarana 500ml" data-price="3.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/PepsiI.jpg" alt="Bebidas" class="card-img2">
                 <h3>500ml - /S3.00</h3>
-                <button>Agregar</button>
+                <button class="btn-agregar" data-name="Pepsi 500ml" data-price="3.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/Hamburguesa.jpg" alt="Fondos" class="card-img2">
-                <h3>S/8.00</h3>
-               <button>Agregar</button>
+                <h3>Hamburguesa - S/8.00</h3>
+               <button class="btn-agregar" data-name="Hamburguesa" data-price="8.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/Nuggets.jpg" alt="Fondos" class="card-img2">
-                <h3>S/15.00</h3>
-                <button>Agregar</button>
+                <h3>Nuggets - S/15.00</h3>
+                <button class="btn-agregar" data-name="Nuggets" data-price="15.00">Agregar</button>
             </article>
             
             <article class="feature-card2">
                 <img src="../img/Salchipapa.jpg" alt="Bebidas" class="card-img2">
-                <h3>S/12.00</h3>
-                <button>Agregar</button>
+                <h3>Salchipapa - S/12.00</h3>
+                <button class="btn-agregar" data-name="Salchipapa" data-price="12.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/Lomo.jpg" alt="Bebidas" class="card-img2">
-                <h3>S/13.00</h3>
-                <button>Agregar</button>
+                <h3>Lomo - S/13.00</h3>
+                <button class="btn-agregar" data-name="Lomo" data-price="13.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/Mostrito.jpg" alt="Bebidas" class="card-img2">
-                <h3>S/10.00</h3>
-                <button>Agregar</button>
+                <h3>Mostrito - S/10.00</h3>
+                <button class="btn-agregar" data-name="Mostrito" data-price="10.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/PolloBroaster.jpg" alt="Fondos" class="card-img2">
-                <h3>Degustaciones</h3>
-                <button>Agregar</button>
+                <h3>Pollo Broaster - S/14.00</h3>
+                <button class="btn-agregar" data-name="Pollo Broaster" data-price="14.00">Agregar</button>
             </article>
 
             <article class="feature-card2">
                 <img src="../img/Chocotejas.jpg" alt="Bebidas" class="card-img2">
-                <h3>5u x S/3.00</h3>
-                <button>Agregar</button>
+                <h3>Chocotejas - S/1.00</h3>
+                <button class="btn-agregar" data-name="Chocotejas" data-price="1.00">Agregar</button>
             </article>
     </main>
     
@@ -112,27 +110,25 @@
 
 <dialog id="modal-carrito" class="modal-dialog">
     <div class="modal-contenido">
-        
-        <button id="btn-cerrar-modal" class="btn-cerrar">❎</button>
-        
+        <button id="btn-cerrar-modal" class="btn-cerrar" id="btn-cerrar-modal">✖️</button>
+        <h2>Confirma tu Pedido</h2>
+        <div id="reporte-carrito"></div>
+        <h3 id="total-pagar">Total a pagar: S/ 0.00</h3>
         <h2>Confirma la dirección de entrega</h2>
-        
-        <div class="opciones-entrega">
-            <input type="radio" name="tipo_entrega">
-            <label>DELIVERY 🛻</label>
-            <input type="radio" name="tipo_entrega">
-            <label>RECOJO EN LOCAL 🏪</label>
-        </div>
-        
-        <p class="modal-subtexto">Ingresa tus datos para continuar</p>
-        
-        <form method="dialog" class="form-modal">
-            <div class="grupo-input">
-                <input type="email" placeholder="Correo electrónico" required>
-                <input type="text" placeholder="Nombres y Apellidos" required>
-                <input type="tel" placeholder="Número de teléfono" required>
+    
+        <form id="form-compra" class="form-modal">
+            <div class="opciones-entrega">
+                <input type="radio" name="tipo-entrega" value="delivery">
+                <label>DELIVERY 🛻</label>
+                <input type="radio" name="tipo-entrega" value="recojo">
+                <label>RECOJO EN LOCAL 🏪</label>
             </div>
-            
+
+            <div class="grupo-input">
+                <input type="text" id="nombre-cliente" placeholder="Ingresa tus nombres completos" required>
+                <input type="text" id="direccion-cliente" placeholder="Dirección de entrega">
+                <input type="number" id="telefono-cliente" placeholder="Número de celular" required>
+            </div>
             <button type="submit" class="btn-continuar">Continuar</button>
         </form>
     </div>

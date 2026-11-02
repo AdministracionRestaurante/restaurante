@@ -101,6 +101,65 @@
     background-color: #ce5109; 
 }
 
+#btn-carrito{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    font-size: x-large;
+}
+#btn-carrito:hover{
+    cursor: pointer;
+}
+
+#carrito-contador{
+    position: absolute; 
+    top: -5px; 
+    right: -5px; 
+    border-radius: 50%; 
+    padding: 2px 6px; 
+    font-size: 11px; 
+    display: none; 
+    font-weight: bold;
+}
+
+#reporte-carrito {
+    width: 100%;
+    max-height: 180px;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding-right: 5px;
+}
+
+.item-reporte {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #333333;
+}
+
+#total-pagar {
+    font-size: 18px;
+    color: #ce5109;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.radio-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
 @media (max-width: 480px) {
     .opciones-entrega {
         flex-direction: column; 
