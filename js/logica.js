@@ -17,9 +17,7 @@ function agregarProducto(nombre, precio) {
 
 function mostrarReporte() {
     reporteCarrito.innerHTML = "";
-    if (carrito.length === 0) {
-        reporteCarrito.innerHTML = "<p style='text-align:center;'>El carrito está vacío actualmente.</p>";
-    }
+    if (carrito.length === 0) reporteCarrito.innerHTML = "<p style='text-align:center;'>El carrito está vacío actualmente.</p>";
 
     let sumaTotal = 0;
 
@@ -60,7 +58,7 @@ btnAgregar.forEach(btn => {
 
 document.querySelectorAll('input[name="tipo-entrega"]').forEach(i => {
     i.addEventListener('change', (e) => {
-        if (e.target.value.toLowerCase() === "recojo"){
+        if (e.target.value.trim().toLowerCase() === "recojo"){
             inputDireccion.required = false;
             inputDireccion.style.display = "none";
         }
