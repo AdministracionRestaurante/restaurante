@@ -45,6 +45,7 @@ btnCarrito.addEventListener("click", () => {
     mostrarReporte();
     const opcion = document.querySelector('input[name="tipo-entrega"]');
     opcion.checked = true;
+    inputDireccion.style.display = "block";
     modal.showModal();
 
 });
