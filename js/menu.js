@@ -96,7 +96,7 @@ formCompra.addEventListener("submit", (e) => {
 
     modal.close();
 
-    alert(`¡Compra Registrada Exitosamente!\n¡Muchas gracias por elegir a Rincón del Sabor!\n\nHaga click en aceptar para volver al menú`);
+    alert(`¡Compra Registrada Exitosamente!\n¡Muchas gracias por elegirnos!`);
 
     carrito = [];
     formCompra.reset();
