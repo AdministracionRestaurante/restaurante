@@ -6,6 +6,8 @@ const reporteCarrito = document.getElementById("reporte-carrito");
 const totalPagarTxt = document.getElementById("total-pagar");
 const formCompra = document.getElementById("form-compra");
 const inputDireccion = document.getElementById("direccion-cliente");
+const inputCliente = document.getElementById("nombre-cliente");
+const inputTelefono = document.getElementById("telefono-cliente");
 const btnAgregar = document.querySelectorAll(".btn-agregar");
 
 function agregarProducto(nombre, precio) {
@@ -43,7 +45,10 @@ function mostrarReporte() {
 
 btnCarrito.addEventListener("click", () => {
     mostrarReporte();
+    const opcion = document.querySelector('input[name="tipo-entrega"]');
+    opcion.checked = true;
     modal.showModal();
+
 });
 
 btnCerrar.addEventListener("click", () => {
@@ -76,9 +81,18 @@ document.querySelectorAll('input[name="tipo-entrega"]').forEach(i => {
 
 formCompra.addEventListener("submit", (e) => {
     e.preventDefault();
-
     if (carrito.length === 0) {
         alert("Tu carrito está vacío.");
+        return;
+    }
+
+    if(inputCliente.value.trim() === "" || inputTelefono.value.trim() === ""){
+        alert("Debe completar los campos");
+        return;
+    }
+    
+    if(!/^9[0-9]{8}$/.test(inputTelefono.value.trim())){
+        alert("Debe ingresar un número válido");
         return;
     }
 
