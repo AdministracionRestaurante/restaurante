@@ -95,9 +95,12 @@ formCompra.addEventListener("submit", (e) => {
         return;
     }
 
-    modal.close();
 
     alert(`¡Compra Registrada Exitosamente!\n¡Muchas gracias por elegirnos!`);
+    
+    modal.close();
+
+    
 
     carrito = [];
     formCompra.reset();
