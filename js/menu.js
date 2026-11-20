@@ -45,9 +45,9 @@ btnCarrito.addEventListener("click", () => {
     mostrarReporte();
     const opcion = document.querySelector('input[name="tipo-entrega"]');
     opcion.checked = true;
+    inputDireccion.required = true;
     inputDireccion.style.display = "block";
     modal.showModal();
-
 });
 
 btnCerrar.addEventListener("click", () => {
@@ -77,6 +77,10 @@ document.querySelectorAll('input[name="tipo-entrega"]').forEach(i => {
     });
 });
 
+modal.addEventListener("click", (e)=>{
+    if(e.target === modal) modal.close()
+})
+
 
 formCompra.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -97,7 +101,7 @@ formCompra.addEventListener("submit", (e) => {
 
 
     alert(`¡Compra Registrada Exitosamente!\n¡Muchas gracias por elegirnos!`);
-    
+
     modal.close();
 
     
